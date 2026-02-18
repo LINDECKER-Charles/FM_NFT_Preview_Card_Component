@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/LINDECKER-Charles/FM_NFT_Preview_Card_Component)
-- Live Site URL: [Live site URL](https://fm-faq-accordion-beige.vercel.app)
+- Live Site URL: [Live site URL](https://lindecker-charles.github.io/FM_NFT_Preview_Card_Component/)
 
 ## My process
 

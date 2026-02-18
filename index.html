@@ -6,22 +6,50 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./asset/images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/output.css">
-
+  <script defer src="./js/script.js"></script>
+  
   <title>Frontend Mentor | NFT preview card component</title>
 
-
 </head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
+<body class="text-sans bg-blue-950 text-base flex flex-col justify-center items-center h-screen">
+  <main class=" bg-blue-900 p-8 rounded-3xl flex flex-col gap-4 w-5/6 md:w-5/12 shadow-2xl relative">
+    <figure class="relative hover:cursor-pointer group" id="image">
+      <img class="rounded-2xl"
+      src="./asset/images/image-equilibrium.jpg" 
+      alt="Shiny cube in blue background">
+      <div class="img-filter">
+        <img src="./asset/images/icon-view.svg" alt="Click to upscale">
+      </div>
+    </figure>
+    <div id="overlay"
+    class="fixed inset-0 bg-black/50 z-40 hidden"></div>
+    <figure id="modal" class="fixed inset-0 w-full flex flex-col justify-center items-center gap-4 z-50 hidden rounded-3xl hover:cursor-pointer">
+      <img class="rounded-xl"
+      src="./asset/images/image-equilibrium.jpg" alt="Shiny cube in blue background">
+    </figure>
+    <section class="text-blue-500 font-light flex flex-col gap-4 border-b border-blue-800 pb-8">
+      <h1 class="font-medium text-2xl my-4"><a href="#">Equilibrium #3429</a></h1>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="flex flex-row justify-between">
+        <div class="base-flex">
+          <img src="./asset/images/icon-ethereum.svg" alt="Etherum">
+          <span class="text-cyan-400 font-bold">0.041 ETH</span>
+        </div>
+        <div class="base-flex">
+          <img src="./asset/images/icon-clock.svg" alt="Time left">
+          <span>3 days left</span>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-row items-center text-blue-500 gap-5">
+      <figure>
+        <img class=" rounded-full border border-white w-12 h-12"
+        src="./asset/images/image-avatar.png" 
+        alt="Jules Wyvern profil photo">
+      </figure>
+      <p>Creation of <a href="#" rel="author">Jules Wyvern</a></p>
+    </section>
+  </main>
   <footer>
     <div class="sr-only text-center text-xs">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-500">Frontend Mentor</a>. 
